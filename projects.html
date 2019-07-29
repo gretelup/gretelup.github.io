@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Gretel's Portfolio</title>
+
+	<link rel="stylesheet" href="stylesheets/foundation.min.css" />
+	<link rel="stylesheet" href="stylesheets/main.css" />
+	<link rel="stylesheet" href="stylesheets/app.css" />
+
+	<script src="javascripts/modernizr.foundation.js"></script>
+
+	<link rel="stylesheet" href="ligature.css" />
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic"
+		rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<nav>
+		<div class="twelve columns header_nav">
+			<div class="row">
+				<ul id="menu-header" class="nav-bar horizontal">
+					<li class="active"><a href="index.html">Home</a></li>
+
+					<li><a href="about.html">About</a></li>
+					<li class="has-flyout">
+						<a href="projects.html">Projects</a><a href="#" class="flyout-toggle"></a>
+						<ul class="flyout">
+							<!-- Flyout Menu -->
+							<li class="has-flyout"><a href="project1.html">Project1</a></li>
+						</ul>
+					</li>
+
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<script type="text/javascript">
+					//<![CDATA[
+					$("ul#menu-header").nav - bar();
+            //]]>
+				</script>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<h1 class="welcome_text">Data Science Projects</h1>
+	</header>
+
+	<section class="section_light">
+		<div class="row">
+			<div class="four columns">
+				<div class="panel">
+					<h3>Lung Cancer: Death & Demographics</h3></a>
+					
+					<p>
+						Working in collaboration with three other people, we investigated whether there is a correlation between a person’s demographics and their chances of dying of lung cancer.
+					</p>
+					<hr>
+					<a href="https://github.com/gretelup/dataviz-project1">GitHub Repository</a>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="panel">
+					<h3>The Top Ten List</h3>
+
+					<p>
+						Working in collaboration with three other people, we developed an ETL pipeline for entertainment fans to find the top ten movies for a given year between 2008-2018 based on gross box office sales and music albums based on number sold. This information is then matched with review and rating information.
+					</p>
+					<hr>
+					<a href="https://github.com/gretelup/top_ten_project">GitHub Repository</a>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="panel">
+					<h3>Weather Visualization</h3></a>
+
+					<p>
+						Created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. Exported these visualizations and created an <a href="https://gretelup.github.io/weather-visualization/">interactive dashboard</a> to view them with the associated analysis.
+					</p>
+					<hr>
+					<a href="https://github.com/gretelup/weather-visualization">GitHub Repository</a>
+				</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<div class="twelve columns footer"></div>
+		</div>
+	</footer>
+	<script src="javascripts/foundation.min.js" type="text/javascript"></script>
+	<script src="javascripts/app.js" type="text/javascript"></script>
+
+	<script src="ItemSlider/js/modernizr.custom.63321.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="ItemSlider/js/jquery.catslider.js"></script>
+	<script>
+		jQuery.noConflict()(function ($) {
+			$("#mi-slider").catslider();
+		});
+	</script>
+
+	<!-- Masonry for galleries -->
+	<script src="javascripts/masonry.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery.noConflict()(function ($) {
+			var $container = $("#container");
+			$container.imagesLoaded(function () {
+				$container.masonry({
+					itemSelector: ".box",
+					isFitWidth: true,
+					isAnimated: true
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>

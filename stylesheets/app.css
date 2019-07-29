@@ -1,0 +1,21 @@
+.icon {
+    border-radius: 50%;
+    width: 150px;
+    padding: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#selfie {
+    border-radius: 50%;
+    width: 150px;
+    padding: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#contact {
+    text-align: center;
+}

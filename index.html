@@ -1,63 +1,114 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Basic Biographical Info</title>
-</head>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
-<body>
-  <h1>Gretel Uptegrove</h1>
-  <img src=https://i.guim.co.uk/img/media/e4ae055cd7e0b946e216e2a43a97fcf085c364e6/463_41_2032_1219/master/2032.jpg?width=300&quality=85&auto=format&fit=max&s=31b3c62c3fa528eb40d69a5f9ea03fe6 alt="Me in 5 years">
+    <title>Gretel's Portfolio</title>
 
-  <section>
-    <p>
-      I am the very model of a modern major general.
-    </p>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="stylesheets/app.css" />
 
-    <p>
-      I've information vegetable, animal, and mineral.
-    </p>
-  </section>
+    <script src="javascripts/modernizr.foundation.js"></script>
 
-  <section>
-    <h2>My Social Media</h2>
-    <ul>
-      <li><a target="_blank" href="https://www.linkedin.com/in/gretel-uptegrove-2496673/">LinkedIn</a></li>
-      <li><a target="_blank" href="https://twitter.com/CleverG?lang=en">Twitter</a></li>
-    </ul>
-  </section>
+    <link rel="stylesheet" href="ligature.css" />
 
-  <section>
-    <h2>A Few of My Favorite Things</h2>
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-  
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Why I like it</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Blind Assassins</td>
-          <td>Margaret Atwood</td>
-          <td>It's a story within a story within a story within a story.</td>
-        </tr>
-        <tr>
-          <td>Heartbreaking Work of Staggering Genius</td>
-          <td>David Eggers</td>
-          <td>It makes me happy and sad at the same time.</td>
-        </tr>
-        <tr>
-          <td>Lord of the Rings Trilogy</td>
-          <td>J.R.R. Tolkien</td>
-          <td>Because it's Lord of the Rings. Duh.</td>
-        </tr>
-        </tbody>
-  </section>
+  <body>
+    <nav>
+      <div class="twelve columns header_nav">
+        <div class="row">
+          <ul id="menu-header" class="nav-bar horizontal">
+            <li class="active"><a href="index.html">Home</a></li>
 
-</body>
+            <li><a href="about.html">About</a></li>
+            <li class="has-flyout">
+                <a href="projects.html">Projects</a><a href="#" class="flyout-toggle"></a>
+                 <ul class="flyout"><!-- Flyout Menu -->
+                   <li class="has-flyout"><a href="project1.html">Project1</a></li>
+                 </ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
 
+          <script type="text/javascript">
+            //<![CDATA[
+            $("ul#menu-header").nav - bar();
+            //]]>
+          </script>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1 class="heading_supersize">Gretel Uptegrove</h1>
+      <h2 class="welcome_text">Unrepentant Geek</h2>
+      <img src="images/Gretel.jpg" alt="Gretel" id="selfie">
+    </header>
+
+    <section class="section_light">
+      <div class="row">
+        <div class="four columns">
+          <img src="images/beethoven.jpg" class="icon">
+          <h3 style="text-align:center">If code was a symphony, she'd be Beethoven.</h3>
+        </div>
+
+        <div class="four columns">
+          <img src="images/pi.jpg" alt="pi pie" class="icon">
+          <h3 style="text-align:center">Loves pi(e).</h3>
+        </div>
+
+        <div class="four columns">
+          <img src="images/compass.jpg" alt="Compass" class="icon">
+          <h3 style="text-align:center">Curious intellectual adventurer, delving into this world of data.</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_main">
+      <h2 style="text-align:center">Testimonials</h2>
+
+      <div class="row">
+        <article class="six columns">
+          <div class="panel">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              cursus fermentum metus, id commodo sapien. Donec cursus fermentum
+              metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec cursus fermentum metus, id commodo sapien. Donec cursus
+              fermentum metus." - Name
+            </p>
+          </div>
+        </article>
+
+        <article class="six columns">
+          <div class="panel">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              cursus fermentum metus, id commodo sapien. Donec cursus fermentum
+              metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec cursus fermentum metus, id commodo sapien. Donec cursus
+              fermentum metus." - Name.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="twelve columns footer"></div>
+      </div>
+    </footer>
+
+    <script src="javascripts/foundation.min.js" type="text/javascript"></script>
+    <script src="javascripts/app.js" type="text/javascript"></script>
+  </body>
 </html>
