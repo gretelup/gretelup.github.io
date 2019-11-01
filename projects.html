@@ -20,53 +20,54 @@
 </head>
 
 <body>
-	<nav>
-		<div class="twelve columns header_nav">
+		<!-- Navigation Bar Start -->
+		<nav>
+		  <div class="twelve columns header_nav">
 			<div class="row">
-				<ul id="menu-header" class="nav-bar horizontal">
-					<li class="active"><a href="index.html">Home</a></li>
-
-					<li><a href="about.html">About</a></li>
-					<li class="has-flyout">
-						<a href="projects.html">Projects</a><a href="#" class="flyout-toggle"></a>
-						<ul class="flyout">
-							<!-- Flyout Menu -->
-							<li class="has-flyout"><a href="project1.html">Project1</a></li>
-						</ul>
-					</li>
-
-					<li><a href="services.html">Services</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-
-				<script type="text/javascript">
-					//<![CDATA[
-					$("ul#menu-header").nav - bar();
-            //]]>
-				</script>
+			  <ul id="menu-header" class="nav-bar horizontal">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class="has-flyout">
+					<a href="projects.html">Projects</a><a href="#" class="flyout-toggle"></a>
+					 <ul class="flyout"><!-- Flyout Menu -->
+					   <li class="has-flyout"><a href="sentiment.html">Sentimental Politics</a></li>
+					   <li class="has-flyout"><a href="topten.html">Top Ten List</a></li>
+					   <li class="has-flyout"><a href="weather.html">Weather Visualization</a></li>
+					 </ul>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			  </ul>
+	
+			  <script type="text/javascript">
+				//<![CDATA[
+				$("ul#menu-header").nav - bar();
+				//]]>
+			  </script>
 			</div>
-		</div>
-	</nav>
-
+		  </div>
+		</nav>
+		<!-- Navigation Bar End -->
+		
 	<header>
 		<h1 class="welcome_text">Data Science Projects</h1>
 	</header>
 
+
 	<section class="section_light">
 		<div class="row">
 			<div class="four columns">
-				<div class="panel">
-					<h3>Lung Cancer: Death & Demographics</h3></a>
+				<a href="sentiment.html"><div class="panel">
+					<h3>Sentimental Politics</h3></a>
 					
 					<p>
-						Working in collaboration with three other people, we investigated whether there is a correlation between a person’s demographics and their chances of dying of lung cancer.
+						Created various machine learning models to determine sentiments of scraped tweets from Democratic Presidential Candidates. 
 					</p>
 					<hr>
-					<a href="https://github.com/gretelup/dataviz-project1">GitHub Repository</a>
-				</div>
+					<a href="https://github.com/gretelup/sentimental_politics">GitHub Repository</a>
+				</div></a>
 			</div>
 			<div class="four columns">
-				<div class="panel">
+				<a href="topten.html"><div class="panel">
 					<h3>The Top Ten List</h3>
 
 					<p>
@@ -74,10 +75,10 @@
 					</p>
 					<hr>
 					<a href="https://github.com/gretelup/top_ten_project">GitHub Repository</a>
-				</div>
+				</div></a>
 			</div>
 			<div class="four columns">
-				<div class="panel">
+				<a href="weather.html"><div class="panel">
 					<h3>Weather Visualization</h3></a>
 
 					<p>
@@ -85,7 +86,7 @@
 					</p>
 					<hr>
 					<a href="https://github.com/gretelup/weather-visualization">GitHub Repository</a>
-				</div>
+				</div></a>
 		</div>
 	</section>
 
