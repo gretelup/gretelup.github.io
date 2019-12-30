@@ -20,34 +20,58 @@
 </head>
 
 <body>
-  <!-- Navigation Bar Start -->
-  <nav>
-    <div class="twelve columns header_nav">
-      <div class="row">
-        <ul id="menu-header" class="nav-bar horizontal">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="has-flyout">
-            <a href="projects.html">Projects</a><a href="#" class="flyout-toggle"></a>
-            <ul class="flyout">
-              <!-- Flyout Menu -->
-              <li class="has-flyout"><a href="sentiment.html">Sentimental Politics</a></li>
-              <li class="has-flyout"><a href="topten.html">Top Ten List</a></li>
-              <li class="has-flyout"><a href="weather.html">Weather Visualization</a></li>
-            </ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Navigation Bar Start -->
+    <nav>
+      <div class="twelve columns header_nav">
+        <div class="row">
+          <ul id="menu-header" class="nav-bar horizontal">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="has-flyout">
+              <a href="projects.html">Projects</a
+              ><a href="#" class="flyout-toggle"></a>
+              <ul class="flyout">
+                <!-- Flyout Menu -->
+                <li class="has-flyout">
+                  <a href="sentiment.html">Sentimental Politics</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="topten.html">Top Ten List</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="exoplanet.html">Exoplanet Machine Learning Models</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="fertility.html">Maternal Demographics in D3</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="weather.html">Weather Visualization</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="bbb.html">Belly Button Biodiversity</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="lung.html">Lung Cancer: Death & demographics</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="mars.html">Mars Scraping</a>
+                </li>
+              </ul>
+            </li>
 
-        <script type="text/javascript">
-          //<![CDATA[
-          $("ul#menu-header").nav - bar();
-              //]]>
-        </script>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <script type="text/javascript">
+            //<![CDATA[
+            $("ul#menu-header").nav - bar();
+            //]]>
+          </script>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Navigation Bar End -->
+    </nav>
+    <!-- Navigation Bar End -->
 
   <header>
     <h1 class="welcome_text">Sentimental Politics</h1>
@@ -56,31 +80,31 @@
   <section class="section_light">
     <div class="row">
 
-
       <div class="row">
         <div class="six columns">
-          <!-- Small pic of website -->
+          <a href="https://github.com/gretelup/sentimental_politics" class="th">
+          <img src="images/sent_notebook.png" alt="Multinomial Naive Bayes Classifier">
+          </a>
         </div>
-
         <div class="six columns">
-          <div class="panel">
+        <div class="panel">
+          
 
-            <h3>Sentimental Politics</h3>
-            <p>
-              The purpose of this project is to explore sentiment analysis using natural language processing in machine
-              learning. To do this, we created multiple machine learning models with different classifiers using a
-              previously analyzed twitter dataset from <a
-                href="http://help.sentiment140.com/for-students">Sentiment140.</a> We then gathered all tweets
-              mentioning the top four Democratic candidates in the Presidential 2020 over a time span of a week, applied
-              the most optimized machine learning model to them, and created visualizations of our results.
-            </p>
-
-          </div>
+          <h3>Sentimental Politics</h3>
+          <p>
+            The purpose of this project is to explore sentiment analysis using natural language processing in machine
+            learning. To do this, we created multiple machine learning models with different classifiers using a
+            previously analyzed twitter dataset from <a
+              href="http://help.sentiment140.com/for-students">Sentiment140.</a> We then gathered all tweets
+            mentioning the top four Democratic candidates in the Presidential 2020 over a time span of a week, applied
+            the most optimized machine learning model to them, and created visualizations of our results.
+          </p>
+          <hr>
+					<a href="https://github.com/gretelup/sentimental_politics">GitHub Repository</a>
 
         </div>
       </div>
-
-      <h4>Project Details</h4>
+    </div>
 
       <div class="row">
         <div class="twelve columns">
@@ -88,6 +112,7 @@
           <dl class="tabs three-up">
             <dd class="active"><a href="#simple1">Technologies Used</a></dd>
             <dd><a href="#simple2">Data Sources</a></dd>
+            <dd><a href="#simple3">Example Code</a></dd>
           </dl>
 
           <ul class="tabs-content">
@@ -142,11 +167,11 @@
             </li>
             <li id="simple2Tab">
               <p>
-                <a href="http://help.sentiment140.com/for-students">Sentiment140 Twitter Corpus</a>: Previously analyzed
+                <a href="http://help.sentiment140.com/for-students">Sentiment140 DataSet</a>: Previously analyzed
                 twitter corpus that we used to train and test machine learning models for twitter sentiment analysis.
                 <ul>
-                  <li><a href="https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf">
-                      Methodology</li>
+                  <li>Methodology: <a href="https://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf">TwitterDistantSupervision09.pdf</a>
+                    </li>
                   <li>Citation: Go, A., Bhayani, R. and Huang, L., 2009. Twitter sentiment classification using distant
                     supervision. CS224N Project Report, Stanford, 1(2009), p.12.</li>
                 </ul>
@@ -154,6 +179,21 @@
 
               </p>
             </li>
+            <li id="simple3Tab">
+              <div>
+                <h5>Multinomial Naive Bayes Classifier</h5>
+                <img src="images/MNB_shot_1.png" alt="Multinomial Naive Bayes Classifier">
+                <img src="images/MNB_shot_2.png" alt="Multinomial Naive Bayes Best Model">
+              </div>
+              <hr>
+              <div>
+                <h5>Complement Navie Bayes Classifier</h5>
+                <img src="images/CNB_shot_1.png" alt="Complement Naive Bayes Classifier">
+                <img src="images/CNB_shot_2.png" alt="Complement Naive Bayes Best Model">
+              </div>
+
+            </li>
+
           </ul>
 
         </div>
