@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Gretel's Portfolio</title>
+
+  <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+  <link rel="stylesheet" href="stylesheets/main.css" />
+  <link rel="stylesheet" href="stylesheets/app.css" />
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <link rel="stylesheet" href="ligature.css" />
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic"
+    rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Navigation Bar Start -->
+    <nav>
+      <div class="twelve columns header_nav">
+        <div class="row">
+          <ul id="menu-header" class="nav-bar horizontal">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="has-flyout">
+              <a href="projects.html">Projects</a
+              ><a href="#" class="flyout-toggle"></a>
+              <ul class="flyout">
+                <!-- Flyout Menu -->
+                <li class="has-flyout">
+                  <a href="sentiment.html">Sentimental Politics</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="topten.html">Top Ten List</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="exoplanet.html">Exoplanet Machine Learning Models</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="fertility.html">Maternal Demographics in D3</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="weather.html">Weather Visualization</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="bbb.html">Belly Button Biodiversity</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="lung.html">Lung Cancer: Death & demographics</a>
+                </li>
+                <li class="has-flyout">
+                  <a href="mars.html">Mars Scraping</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <script type="text/javascript">
+            //<![CDATA[
+            $("ul#menu-header").nav - bar();
+            //]]>
+          </script>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar End -->
+
+  <header>
+    <h1 class="welcome_text">Weather Visualization</h1>
+  </header>
+
+  <section class="section_light">
+    <div class="row">
+
+      <div class="row">
+        <div class="six columns">
+          <a href="https://gretelup.github.io/weather-visualization/" class="th">
+          <img src="images/weather_page.png" alt="Weather Visualization Page">
+          </a>
+        </div>
+        <div class="six columns">
+        <div class="panel">
+          <h3>Weather Visualization</h3>
+          <p>
+            Created a Python script to visualize the weather of 500+ cities
+            across the world of varying distance from the equator. Exported
+            these visualizations and created an interactive dashboard to
+            view them with the associated analysis.
+          </p>
+          <p>
+            Published to <a href="https://gretelup.github.io/weather-visualization/"
+            >GitHub Pages</a
+          >
+          </p>
+          <hr />
+          <a href="https://github.com/gretelup/weather-visualization"
+            >GitHub Repository</a
+          >
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="twelve columns">
+
+          <dl class="tabs three-up">
+            <dd class="active"><a href="#simple1">Technologies Used</a></dd>
+            <dd><a href="#simple2">Data Sources</a></dd>
+            <dd><a href="#simple3">Example Code</a></dd>
+          </dl>
+
+          <ul class="tabs-content">
+            <li class="active" id="simple1Tab">
+
+
+              <div class="three columns">
+                <h6>Languages</h6>
+                <ul>
+                  <li class="bullet-item">Python</li>
+                  <li class="bullet-item">HTML</li>
+                  <li class="bullet-item">CSS</li>
+                </ul>
+              </div>
+
+              <div class="three columns">
+                <h6 style="text-align: left">Data Extraction and Munging</h6>
+                <ul>
+                  <li class="bullet-item">jupyter notebook</li>
+                  <li class="bullet-item">pandas</li>
+                  <li class="bullet-item">numpy</li>
+                  <li class="bullet-item">requests</li>
+                  <li class="bullet-item">citypy</li>
+                  <li class="bullet-item">matplotlib</li>
+                </ul>
+              </div>
+
+              <div class="three columns">
+                <h6 style="text-align: left">HTML & CSS</h6>
+                <ul>
+                  <li class="bullet-item">Boostrap</li>
+                  <li class="bullet-item">GitHub Pages</li>
+                </ul>
+              </div>
+              <div class="three columns"></div>
+            </li>
+            <li id="simple2Tab">
+              <p>
+                <ul>
+                  <li><a href="https://openweathermap.org/">OpenWeatherMap</a>:  Current weather based on city name.
+                    </li>
+                </ul>
+              </p>
+            </li>
+            <li id="simple3Tab">
+              <div>
+                <img src="images/weather_shot_1.png" alt="Create City List">
+              </div>
+              <hr>
+              <div>
+                <img src="images/weather_shot_2.png" alt="Query OpenWeatherMap">
+              </div>
+              <hr>
+              <div>
+                <img src="images/weather_shot_3.png" alt="Create Scatter Plot">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="twelve columns footer"></div>
+    </div>
+  </footer>
+
+  <script src="javascripts/foundation.min.js" type="text/javascript"></script>
+  <script src="javascripts/app.js" type="text/javascript"></script>
+</body>
+
+</html>
